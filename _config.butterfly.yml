@@ -1,48 +1,59 @@
-# Navigation bar settings (導航欄設置)
-# see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
+# Navigation bar settings (导航栏设置)
+# see https://butterfly.js.org/posts/4aa8abbe/##导航栏设置-Navigation-bar-settings
 # --------------------------------------
 
 nav:
   logo: # image
-  display_title: true
-  fixed: false # fixed navigation bar
+  display_title: true #是否显示网站标题
+  fixed: true # fixed navigation bar 是否固定状态栏
 
-# Menu 目錄
+# Menu 菜单/目录
+#  必须是 /xxx/，后面||分开，然后写图标名，例如fas。
+#  如果不希望显示图标，图标名可不写。
+#  默认子目录是展开的，如果你想要隐藏，在子目录里添加 hide 。
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  首页: / || fas fa-home
+  文章 || fas || faa-tada:
+    归档: /archives/ || icon-guidang
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+  时间轴: /archives/ || fas fa-archive
+  清单||fa fa-heartbeat:
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+    电影: /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
-# Code Blocks (代碼相關)
+
+# Code Blocks (代码相关配置)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
-highlight_copy: true # copy button
+highlight_theme: mac light #主题颜色  darker / pale night / light / ocean / mac / mac light / false
+highlight_copy: true #代码复制 copy button
 highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
-code_word_wrap: false
+highlight_shrink: false #代码自动展开 true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: 230 #代码高度限制 unit: px 超出限制要点击手动展开
+code_word_wrap: false #代码自动换行
 
-# Social Settings (社交圖標設置)
+# Social Settings (社交图标设置)
 # formal:
-#   icon: link || the description || color
+#   icon: link(跳转链接) || the description || color
+#  社交图标 (Social Settings)
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  #   fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  #   fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fa-brands fa-github-alt: https://github.com/baifengxiao || 站长的Github
+  fa-brands fa-weixin: /img/QRcode_weixin.jpg || 站长的微信
+  fa-brands fa-bilibili: https://space.bilibili.com/3537120402606393 || 站长的B站空间
 
-# Image (圖片設置)
+# Image (图片设置)
 # --------------------------------------
 
-# Favicon（網站圖標）
+# Favicon（网站图标）
 favicon: /img/favicon.png
 
-# Avatar (頭像)
+# Avatar (头像)
 avatar:
   img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
   effect: false
