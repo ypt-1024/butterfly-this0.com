@@ -2,18 +2,18 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
-title: Hexo
+# Site 网站资料设置
+title: '零星'
 subtitle: ''
 description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+keywords: '开源个人网站,零星'
+author: YuPengtao
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
-# URL
+# URL 网址设置
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://this0.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
