@@ -372,9 +372,14 @@ katex:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "我们没有找到任何搜索结果: ${query}"
+    hits_stats: "找到${hits}条结果（用时${time} ms）"
+
 
 # Local search
 local_search:
@@ -422,8 +427,8 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: # Valine,Disqus
-  text: true # Display the comment name next to the button
+  use: Twikoo # Valine,Disqus
+  text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
@@ -500,9 +505,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
-  visitor: false
+  envId:     #替换为自己的api
+  region: ap-chengdu  #替换为自己的区域，可选
+  visitor: false   #是否显示阅读数
   option:
 
 # Giscus
@@ -536,10 +541,10 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
@@ -560,10 +565,10 @@ daovoice:
   app_id:
 
 # crisp
-# https://crisp.chat/en/
+#官网 https://crisp.chat/en/  website_id在设置里面
 crisp:
-  enable: false
-  website_id:
+  enable: true
+  website_id:  #替换成自己的
 
 # messenger
 # https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/

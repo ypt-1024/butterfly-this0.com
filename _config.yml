@@ -103,3 +103,27 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+plugins:
+  - hexo-algoliasearch
+
+#this0的algolia_search配置
+#官网：https://www.algolia.com/
+#插件教程：https://www.algolia.com/users/sign_in
+#一篇中文使用教程 https://blog.csdn.net/qq_45173404/article/details/122861321
+
+algolia:
+  appId: ""                         #替换为自己的
+  apiKey: ""  #替换为自己的
+  adminApiKey: ""   #替换为自己的
+  chunkSize: 5000
+  indexName: ""                #替换为自己的
+  fields:
+    - content:strip:truncate,0,30000
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
