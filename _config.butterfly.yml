@@ -924,7 +924,9 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  # - <link rel="stylesheet" href="/xxx.css">
+#   - <link rel="stylesheet" href="/xxx.css">
+  # 一图流
+     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
   # - <script src="xxxx"></script>
 
@@ -1006,3 +1008,25 @@ CDN:
   # artalk_css:
   # busuanzi:
   # abcjs_basic_js:
+
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E7%AC%BA%E5%A4%B4%E9%83%A8%E5%9B%BE%E7%89%87.jpg #信笺头部图片
+    line: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E7%AC%BA%E5%BA%95%E9%83%A8%E5%9B%BE%E7%89%87.webp #信笺底部图片
+    beforeimg: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E5%B0%81%E5%89%8D%E5%8D%8A%E9%83%A8%E5%88%86.webp # 信封前半部分
+    afterimg: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E5%B0%81%E5%90%8E%E5%8D%8A%E9%83%A8%E5%88%86.webp # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 零星为您服务！ #仅支持单行文本
+  height: #1050px，信封划出的高度
+  # http://localhost/comments/index
+  path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
