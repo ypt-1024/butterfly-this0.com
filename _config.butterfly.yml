@@ -750,16 +750,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
-  font-family:
-  code-font-family:
+  global-font-size: '15px'
+  code-font-size: '14px'
+  font-family: JNBBH
+  code-font-family: JNBBH
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主页居中網站名字
 blog_title_font:
   font_link:
-  font-family:
+  font-family: JNBBH
 
 # The setting of divider icon (水平分隔線图標設置)
 hr_icon:
@@ -1031,3 +1031,37 @@ envelope_comment:
   front_matter: #【可选】comments页面的 front_matter 配置
     title: 留言板
     comments: true
+
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/ 分类插件
+categoryBar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: Hello World
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+  custom_css: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/css/categorybar.css
+
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/ 首页分类轮播图
+swiper:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/css/swiper.min.css #swiper css依赖 替换成自己的
+  swiper_js: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/js/swiper.min.js #swiper js依赖 替换成自己的
+  custom_css: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/css/swiperstyle.css # 适配主题样式补丁 替换成自己的
+  custom_js: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/js/swiper_init.js # swiper初始化方法 替换成自己的
