@@ -12,7 +12,7 @@ nav:
 #  如果不希望显示图标，图标名可不写。
 #  默认子目录是展开的，如果你想要隐藏，在子目录里添加 hide 。
 menu:
-  首页: / || fas fa-home
+  首页: / || icon-wenzhang
   文章 || fas || faa-tada:
     归档: /archives/ || icon-guidang
     标签: /tags/ || fas fa-tags
@@ -39,13 +39,22 @@ code_word_wrap: false #代码自动换行
 # Social Settings (社交图标设置)
 # formal:
 #   icon: link(跳转链接) || the description || color
-#  社交图标 (Social Settings)
+#  老版社交图标 (Social Settings)
+#social:
+#  #   fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+#  #   fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+#  fa-brands fa-github-alt: https://github.com/baifengxiao || 站长的Github
+#  fa-brands fa-weixin: /img/QRcode_weixin.jpg || 站长的微信
+#  fa-brands fa-bilibili: https://space.bilibili.com/3537120402606393 || 站长的B站空间
+
+#新版的社交图标
 social:
-  #   fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  #   fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-  fa-brands fa-github-alt: https://github.com/baifengxiao || 站长的Github
-  fa-brands fa-weixin: /img/QRcode_weixin.jpg || 站长的微信
-  fa-brands fa-bilibili: https://space.bilibili.com/3537120402606393 || 站长的B站空间
+  # iconfont多彩图标
+  Github: https://github.com/baifengxiao || icon-rat || faa-tada
+  # fontawesome单色图标
+  Email: mailto:javaer@111.com || fas fa-envelope || faa-tada
+  # iconfont单色图标
+  Bilibili: https://space.bilibili.com/3537120402606393 || icon-ox || faa-tada
 
 # Image (图片设置)
 # --------------------------------------
@@ -939,6 +948,7 @@ inject:
   bottom:
   # - <script src="xxxx"></script>
      - <script defer src="/js/runtime.js"></script> # 页脚计时器
+     - <script async src="//at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js"></script> # 替换为自己项目的
     # 星空背景和流星特效
      - <canvas id="universe"></canvas>
      - <script defer src="/js/universe.js"></script>
