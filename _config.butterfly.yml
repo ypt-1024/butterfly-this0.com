@@ -671,7 +671,12 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg)
+background:
+  default: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg) #【必选】默认背景
+  darkmode: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/PC%E7%AB%AF%E9%BB%91%E5%A4%9C.JPG); #【可选】PC端夜间模式背景
+  mobileday: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg) #【可选】移动端日间默认背景
+  mobilenight: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/PC%E7%AB%AF%E9%BB%91%E5%A4%9C.JPG); #【可选】移动端夜间模式背景
+
 
 # Footer Background
 footer_bg: false
@@ -738,9 +743,9 @@ click_heart:
 clickShowText:
   enable: true
   text:
-   - this
-   - 0
-   - .com
+    - this
+    - 0
+    - .com
   fontSize: 15px
   random: false
   mobile: false
@@ -784,8 +789,8 @@ subtitle:
   # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # source 調用第三方服務
-   source: false 關閉調用
+    # source 調用第三方服務
+    source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
@@ -940,18 +945,23 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-#   - <link rel="stylesheet" href="/xxx.css">
-  # 一图流
-     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-  # 星空背景和流星特效
-     - <link rel="stylesheet" href="/css/universe.css">
-  bottom:
-  # - <script src="xxxx"></script>
-     - <script defer src="/js/runtime.js"></script> # 页脚计时器
-     - <script async src="//at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js"></script> # 替换为自己项目的
+    #   - <link rel="stylesheet" href="/xxx.css">
+    # 一图流
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     # 星空背景和流星特效
-     - <canvas id="universe"></canvas>
-     - <script defer src="/js/universe.js"></script>
+    - <link rel="stylesheet" href="/css/universe.css">
+    - <link rel="stylesheet" href="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/elementui2.15.6/index.css"> # 引入组件库(f12)
+  bottom:
+    # - <script src="xxxx"></script>
+    - <script defer src="/js/runtime.js"></script> # 页脚计时器
+    - <script async src="//at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js"></script> # 替换为自己项目的
+    # 星空背景和流星特效
+    - <canvas id="universe"></canvas>
+    - <script defer src="/js/universe.js"></script>
+    - <script src="/js/share.js"></script>  #分享+全局防抖函数
+    - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    - <script async src="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/vue2.6.14/vue.min.js"></script> # 引入VUE(f12)
+    - <script async src="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/elementui2.15.6/index.js"></script> # 引入ElementUI(f12)
 
 
 # CDN

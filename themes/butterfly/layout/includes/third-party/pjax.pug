@@ -3,7 +3,7 @@ if theme.pjax.exclude
   each val in theme.pjax.exclude
     - pjaxExclude = pjaxExclude + `:not([href="${val}"])`
 
-- let pjaxSelectors = ['head > title','#config-diff','#body-wrap','#rightside-config-hide','#rightside-config-show','.js-pjax']
+- let pjaxSelectors = ['head > title','#config-diff','#body-wrap','#rightside-config-hide','#rightside-config-show','#web_bg','.js-pjax']
 
 - let choose = theme.comments.use
 if choose
@@ -31,7 +31,7 @@ script.
     btf.removeGlobalFnEvent('themeChange')
 
     document.getElementById('rightside').classList.remove('rightside-show')
-    
+
     if (window.aplayers) {
       for (let i = 0; i < window.aplayers.length; i++) {
         if (!window.aplayers[i].options.fixed) {
