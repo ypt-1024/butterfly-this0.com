@@ -12,18 +12,24 @@ nav:
 #  如果不希望显示图标，图标名可不写。
 #  默认子目录是展开的，如果你想要隐藏，在子目录里添加 hide 。
 menu:
-  首页: / || icon-wenzhang
-  文章 || fas || faa-tada:
+  首页: / || icon-home
+  文章 || icon-wenzhang:
     归档: /archives/ || icon-guidang
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
-  时间轴: /archives/ || fas fa-archive
-  清单||fa fa-heartbeat:
-    音乐: /music/ || fas fa-music
-    照片: /Gallery/ || fas fa-images
-    电影: /movies/ || fas fa-video
-  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+    标签: /tags/ || icon--shuqian
+    分类: /categories/ || icon-fenlei
+  休闲 || icon-xiuxian:
+    音乐: /music/ || icon-yinyue
+    相册: /Gallery/ || icon-xiangce
+    游戏: /game/ || icon-youxi
+  百宝箱||icon-baibaoxiang:
+    网址导航: /daohang/ || icon-wangzhidaohang
+  网站||icon-wangzhan:
+    留言板: /comments/ || icon-liuyanban
+    时间轴: /timeline/ || icon-shijianzhou
+  个人||geren:
+    唠叨: /laodao/ || icon-laodao
+    秘密花园: /secret/ || icon-mimi
+    关于: /adbout/ || icon-guanyu
 
 
 # Code Blocks (代码相关配置)
@@ -50,11 +56,11 @@ code_word_wrap: false #代码自动换行
 #新版的社交图标
 social:
   # iconfont多彩图标
-  Github: https://github.com/baifengxiao || icon-rat || faa-tada
+  Github: https://github.com/baifengxiao || icon-github
   # fontawesome单色图标
-  Email: mailto:javaer@111.com || fas fa-envelope || faa-tada
+  wechat: /img/QRcode_weixin.jpg || icon-weixin
   # iconfont单色图标
-  Bilibili: https://space.bilibili.com/3537120402606393 || icon-ox || faa-tada
+  Bilibili: https://space.bilibili.com/3537120402606393 || icon-bilibili
 
 # Image (图片设置)
 # --------------------------------------
@@ -261,12 +267,12 @@ aside:
     enable: true
     content: <center><b>有问题请直接留言或添加微信交流。</b><br><br></center>
   card_recent_post:
-    enable: true
+    enable: false
     limit: 3 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: true
+    enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
@@ -304,12 +310,12 @@ busuanzi:
 # Time difference between publish date and now (網页運行时間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: true
-  publish_date: 10/16/2023 17:56:00
+  enable: false
+  publish_date: 10/22/2023 23:00:00
 
 # Aside widget - Newest Comments 最新评论
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -758,7 +764,7 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon: '\f56b' # '\f0c1'
+  title-prefix-icon: '\f863' # '\f0c1'
   title-prefix-icon-color: '#F47466' # '#F47466'
 
 # Global font settings
@@ -955,7 +961,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
-    - <script async src="//at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js"></script> # 替换为自己项目的
+    - <script async src="//at.alicdn.com/t/c/font_4256434_m2diff1tw29.js"></script> # 替换为自己项目的
     - <script async src="/js/console.js"></script>
     # 星空背景和流星特效
     - <canvas id="universe"></canvas>
