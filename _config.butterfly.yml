@@ -951,6 +951,7 @@ inject:
     # 星空背景和流星特效
     - <link rel="stylesheet" href="/css/universe.css">
     - <link rel="stylesheet" href="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/elementui2.15.6/index.css"> # 引入组件库(f12)
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
     # - <script src="xxxx"></script>
     - <script defer src="/js/runtime.js"></script> # 页脚计时器

@@ -3,6 +3,7 @@ extends includes/layout.pug
 block content
   include ./includes/mixins/article-sort.pug
   #archive
+    <div id="posts-chart" data-start="2023-10" style="height: 300px; padding: 10px;"></div>
     .article-sort-title= `${_p('page.articles')} - ${getArchiveLength()}`
     +articleSort(page.posts)
     include includes/pagination.pug
