@@ -956,6 +956,7 @@ inject:
     # - <script src="xxxx"></script>
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
     - <script async src="//at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js"></script> # 替换为自己项目的
+    - <script async src="/js/console.js"></script>
     # 星空背景和流星特效
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
