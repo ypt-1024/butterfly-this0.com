@@ -20,8 +20,8 @@ function createtime() {
     let currentTimeHtml = "";
     (currentTimeHtml =
         hnum < 8 && hnum > 22
-            ? `<img class='boardsign' src='https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/svg/this0-%E4%B8%8A%E7%8F%AD%E4%B8%AD%F0%9F%92%BB.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">已开源 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> </div>`
-            : `<img class='boardsign' src='https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/svg/this0-%E4%BC%91%E6%81%AF%E5%95%A6%F0%9F%8C%99.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">已开源 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> </div>`),
+            ? `<img class='boardsign' src='https://cdn.this0.com/blog/base/svg/this0-%E4%B8%8A%E7%8F%AD%E4%B8%AD%F0%9F%92%BB.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">已开源 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> </div>`
+            : `<img class='boardsign' src='https://cdn.this0.com/blog/base/svg/this0-%E4%BC%91%E6%81%AF%E5%95%A6%F0%9F%8C%99.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">已开源 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> </div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }

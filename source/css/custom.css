@@ -276,7 +276,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: 'JNBBH';   /*荆南麦圆体*/
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/font/JingNanBoBoHei-Bold-2.ttf); /*替换为自己的字体文件*/
+    src: url(https://cdn.this0.com/blog/base/font/JingNanBoBoHei-Bold-2.ttf); /*替换为自己的字体文件*/
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */

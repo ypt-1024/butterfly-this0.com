@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site 网站资料设置
-title: '零星'
+title: '✨零星'
 subtitle: ''
 description: ''
 keywords: '开源个人网站,零星'
@@ -116,11 +116,11 @@ plugins:
 #一篇中文使用教程 https://blog.csdn.net/qq_45173404/article/details/122861321
 
 algolia:
-  appId: ""                         #替换为自己的
-  apiKey: ""  #替换为自己的
-  adminApiKey: ""   #替换为自己的
+  appId: "3H36HJCQTM"                         #替换为自己的
+  apiKey: "e7d8733265edcd7274476caa6bca8072"  #替换为自己的
+  adminApiKey: "c27a57e5706e7153d0ec3e4dccb4ea79"   #替换为自己的
   chunkSize: 5000
-  indexName: ""                #替换为自己的
+  indexName: "this0_algolia_indices"                #替换为自己的
   fields:
     - content:strip:truncate,0,30000
     - excerpt:strip
