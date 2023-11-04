@@ -18,19 +18,19 @@ menu:
     标签: /tags/ || icon--shuqian
     分类: /categories/ || icon-fenlei
   休闲 || icon-xiuxian:
-    音乐: /music/ || icon-yinyue
-    相册: /Gallery/ || icon-xiangce
-    游戏: /game/ || icon-youxi
+    音乐: /xiuxian/music/ || icon-yinyue
+    相册: /xiuxian/gallery/ || icon-xiangce
+    游戏: /xiuxian/game/ || icon-youxi
   百宝箱||icon-baibaoxiang:
-    网址导航: /daohang/ || icon-wangzhidaohang
+    网址导航: /baibaoxiang/daohang/ || icon-wangzhidaohang
   网站||icon-wangzhan:
-    网站统计: /census/ || icon-wenzhangtongji
-    留言板: /comments/ || icon-liuyanban
-    时间轴: /timeline/ || icon-shijianzhou
+    网站统计: /wangzhan/census/ || icon-wenzhangtongji
+    留言板: /wangzhan/comments/ || icon-liuyanban
+    时间轴: /wangzhan/timeline/ || icon-shijianzhou
   个人||geren:
-    唠叨: /laodao/ || icon-laodao
-    秘密花园: /secret/ || icon-mimi
-    关于: /adbout/ || icon-guanyu
+    唠叨: /geren/laodao/ || icon-laodao
+    秘密花园: /geren/secret/ || icon-mimi
+    关于: /geren/about/ || icon-guanyu
 
 
 # Code Blocks (代码相关配置)
@@ -1072,7 +1072,7 @@ envelope_comment:
   bottom: 零星为您服务！ #仅支持单行文本
   height: #1050px，信封划出的高度
   # http://localhost/comments/index
-  path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  path: wangzhan/comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
     title: 留言板
     comments: true
@@ -1149,7 +1149,7 @@ wowjs:
 gitcalendar:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: /census/ # 应用页面
+  enable_page: /wangzhan/census/ # 应用页面
   # butterfly挂载容器
   layout: # 挂载容器类型
     type: id
