@@ -4,11 +4,14 @@ description: 🥧本文汇总Markdown格式以及外挂标签在网页端的渲�
 mathjax: true
 tags:
    - Markdown
+   - 网站说明文档
 categories:
-   - 演示
+   - 网站说明文档
 abbrlink: 2013454d
 swiper_index: 2
-date: 2023-10-19 01:29:47
+date: 2023-10-26 05:36:00
+copyright_author: Fomalhaut # 作者覆写
+copyright_url: https://www.fomal.cc/posts/2013454d.html # 原文链接覆写
 ---
 
 # 1.Markdown语法自带格式
@@ -2439,94 +2442,12 @@ Butterfly主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:标
 {% endtabs %}
 
 
-## 2.29 PDF展示 见 https://github.com/superalsrk/hexo-pdf
-{% tabs 分栏 %}
-<!-- tab 标签语法 -->
-```Markdown
-{% pdf 文件路径 %}
-```
-<!-- endtab -->
-
-<!-- tab 参数配置 -->
-
-1. `文件路径`: 可以是相对路径或者是在线链接
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-```Markdown
-# 1.本地文件:在md文件路径下创建一个同名文件夹，其内放pdf文件名为xxx.pdf的文件
-{% pdf xxx.pdf %}
-# 2.在线链接
-{% pdf https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
-```
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-2.在线链接(要放到最外层才能起作用)
-{% pdf https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
-
-<!-- endtab -->
-
-{% endtabs %}
+## 2.29 PDF展示 
+详情见[hexo-pdf](https://github.com/superalsrk/hexo-pdf)
 
 
-## 2.30 Hexo-tag-map 插件 见https://blog.guole.fun/posts/41887/
-
-{% tabs 分栏 %}
-<!-- tab 标签语法 -->
-```Markdown
-{% + 标签值 + 经度 + 纬度 + 文本 + 缩放等级 + 宽 + 高 + 默认图层 + %}
-```
-<!-- endtab -->
-
-<!-- tab 参数配置 -->
-
-|     地图名      | 标签值 <必填> | 宽 (默认 100%) / 高 (默认 360px) | 缩放等级 (默认 14) | 宽 (默认 100%) / 高 (默认 360px) | 默认图层 (默认 1) |
-| :-------------: | :-----------: | :------------------------------: | :----------------: | :------------------------------: | :---------------: |
-|    混合地图     |      map      |  百分数或具体值 (100% 或 360px)  |     取值 3~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~7      |
-|    谷歌地图     |   googleMap   |  百分数或具体值 (100% 或 360px)  |     取值 1~20      |  百分数或具体值 (100% 或 360px)  |     取值 1~3      |
-|    高德地图     |   gaodeMap    |  百分数或具体值 (100% 或 360px)  |     取值 3~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~3      |
-|    百度地图     |   baiduMap    |  百分数或具体值 (100% 或 360px)  |     取值 4~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~2      |
-|    Geoq 地图    |    geoqMap    |  百分数或具体值 (100% 或 360px)  |     取值 1~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~5      |
-| openstreet 地图 | openstreetMap |  百分数或具体值 (100% 或 360px)  |     取值 1~18      |  百分数或具体值 (100% 或 360px)  |   不支持此参数    |
-
-1. 参数之间，用英文逗号相隔
-2. 参数必须按上述事例顺序输入，不得为空
-3. 同一个页面，同一组经纬度值，只能插入一个相同标签值的地图 (若有需要，可以将第二个地图上，经度或纬度末尾删除一两个数)
-4. 参数取值必须在上述范围内
-5. 默认图层：即地图叠加层的值，默认常规地图还是卫星地图，可按地图显示顺序取值
-6. 缩放等级，数字越大，地图比例尺越小，显示的越精细
-7. 除标签值外，其他参数选填，但 每个参数的左边的参数必填
-8. 谷歌地图需要外网才能加载查看
-
-坐标获取：[高德地图坐标拾取系统](https://lbs.amap.com/tools/picker) 、[百度地图坐标拾取系统](https://api.map.baidu.com/lbsapi/getpoint/index.html)
-
-
-
-
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-```Markdown
-{% map 120.101101,30.239119 %}
-{% googleMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！ %}
-{% geoqMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！, 13, 90%, 320px, 3 %}
-```
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-{% map 120.101101,30.239119 %}
-<br>
-{% googleMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！ %}
-<br>
-{% geoqMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！, 13, 90%, 320px, 3 %}
-<br>
-<!-- endtab -->
-
-{% endtabs %}
-
+## 2.30 Hexo-tag-map 插件 
+详情见[Hexo-tag-map](https://blog.guole.fun/posts/41887/)
 
 ## 2.31 隐藏块
 
@@ -2553,7 +2474,7 @@ content
 ```markdown
 {% hideBlock 点我预览, blue %}
 这里有张图片：
-<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
+<img src="https://cdn.this0.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg" alt="image (1)" style="zoom:67%;" />
 {% endhideBlock %}
 ```
 <!-- endtab -->
@@ -2566,4 +2487,5 @@ content
 <!-- endtab -->
 
 {% endtabs %}
-## 2.32 文章加密插件 见https://github.com/D0n9X1n/hexo-blog-encrypt
+## 2.32 文章加密插件 
+详情见[文章加密插件](https://github.com/D0n9X1n/hexo-blog-encrypt)

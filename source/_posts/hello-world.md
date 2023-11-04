@@ -1,10 +1,13 @@
 ---
-title: 文章标题
+title: 第一篇文章
 description: 文章描述
 swiper_index: 1
-category: 文章demo
+category:
+  - 网站说明文档
+tags:
+  - 网站说明文档
 abbrlink: 3bf4a27
-date: 2023-10-19 01:29:47
+date: 2023-10-26 05:26:00
 updated:
 cover:
 ---
