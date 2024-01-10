@@ -312,7 +312,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: false
-  publish_date: 10/26/2023 5:36:00
+  publish_date: 01/09/2024 18:15:00
 
 # Aside widget - Newest Comments 最新评论
 newest_comments:
@@ -963,9 +963,11 @@ inject:
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
     # - <script src="xxxx"></script>
-    - <script defer src="https://cdn.this0.com/blog/base/js/runtime.js"></script> # 页脚计时器
+#    - <script defer src="https://cdn.this0.com/blog/base/js/runtime.js"></script> # 页脚计时器
+#    引入阿里图标库
     - <script async src="//at.alicdn.com/t/c/font_4256434_m2diff1tw29.js"></script> # 替换为自己项目的
-    - <script async src="https://cdn.this0.com/blog/base/js/console.js"></script>
+#    f12控制台
+#    - <script async src="https://cdn.this0.com/blog/base/js/console.js"></script>
     #     表情放大js
     - <script async src="https://cdn.this0.com/blog/base/js/emoji.js"></script>
     # 星空背景和流星特效
@@ -979,7 +981,7 @@ inject:
     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     - <script async src="https://cdn.this0.com/blog/base/vue2.6.14/vue.min.js"></script> # 引入VUE(f12)
     - <script async src="https://cdn.this0.com/blog/base/elementui2.15.6/index.js"></script> # 引入ElementUI(f12)
-    - <script async src="https://cdn.this0.com/blog/base/js/title.js"></script>
+    - <script async src="https://cdn.this0.com/blog/base/js/title.js"></script> #恶搞标题
 
 # CDN
 # Don't modify the following settings unless you know how they work
