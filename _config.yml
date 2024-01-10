@@ -105,7 +105,9 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: ypt@121.37.242.52:/home/ypt/blog.git
+  branck: master
 
 plugins:
   - hexo-algoliasearch
