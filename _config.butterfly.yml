@@ -178,7 +178,7 @@ copy:
 toc:
   post: true
   page: false
-  number: true
+  number: false
   expand: false
   style_simple: false # for post
   scroll_percent: true
@@ -442,7 +442,7 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   use: Twikoo # Valine,Disqus
-  text: false # Display the comment name next to the button
+  text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
@@ -1074,39 +1074,6 @@ envelope_comment:
     title: 留言板
     comments: true
 
-# hexo-butterfly-categories-card
-# see https://akilar.top/posts/a9131002/ 分类插件
-categoryBar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0
-  column: odd # odd：3列 | even：4列
-  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
-  message:
-    - descr: Hello World
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-  custom_css: https://blog-resources.this0.com/base/css/categorybar.css
-
-# hexo-butterfly-swiper
-# see https://akilar.top/posts/8e1264d1/ 首页分类轮播图
-swiper:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  timemode: date #date/updated
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
-  swiper_css: https://blog-resources.this0.com/base/css/swiper.min.css #swiper css依赖 替换成自己的
-  swiper_js: https://blog-resources.this0.com/base/js/swiper.min.js #swiper js依赖 替换成自己的
-  custom_css: https://blog-resources.this0.com/base/css/swiperstyle.css # 适配主题样式补丁 替换成自己的
-  custom_js: https://blog-resources.this0.com/base/js/swiper_init.js # swiper初始化方法 替换成自己的
 
 # tag-plugins-plus
 # see https://akilar.top/posts/615e2dec/
