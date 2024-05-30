@@ -6,6 +6,6 @@ categories:
   -
 abbrlink:
 date: {{ date }}
-update:
+updated:
 description:
 ---
